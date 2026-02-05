@@ -1,0 +1,16 @@
+const mongoose = require("mongoose");
+
+const messageSchema = new mongoose.Schema(
+  {
+    sender: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+    receiver: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+
+    roomId: { type: String, required: true }, // 👈 PRIVATE ROOM
+
+    content: { type: String, default: "" },
+    fileUrl: { type: String, default: "" }
+  },
+  { timestamps: true }
+);
+
+module.exports = mongoose.model("Message", messageSchema);
