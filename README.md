@@ -258,3 +258,6 @@ Frontend terminal → Ctrl + C
 - Frontend runs on port: **5173**
 - MongoDB must be running before starting backend
 
+
+## 👨‍💻 Author
+Gottimukkala Syamuel Raj
